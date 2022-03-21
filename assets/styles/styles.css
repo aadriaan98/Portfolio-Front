@@ -385,7 +385,7 @@ nav a:hover{
     width: 60%;
     border: none;
     text-align: inherit;
-    padding-top: 3em;
+    padding-top: 1em;
     padding-left: 38em;
 }
 #formulario div{
@@ -393,7 +393,7 @@ nav a:hover{
 }
 .formulario-input{
     width: 656px;
-    height: 50px;
+    height: 40px;
     border: none;
 }
 #contacto button{
@@ -403,7 +403,7 @@ nav a:hover{
     background-color: #2A7AE4;
     color: #ffffff;
     border: none;
-    margin-top: 4.8em;
+    margin-top: 2em;
     margin-right: 41em;
     cursor: pointer;
     transition: 0.5s all;

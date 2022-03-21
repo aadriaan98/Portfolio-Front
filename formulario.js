@@ -27,10 +27,12 @@ const validarFormulario = (e) =>{
             if(expresiones.correo.test(e.target.value)){
                 document.getElementById("grupo-correo").classList.remove("grupo-formulario-incorrecto");
                 document.getElementById("grupo-correo").classList.add("grupo-formulario-correcto");
+                document.querySelector("#grupo-correo .formulario-input_error").classList.remove("formulario-input_error-activo")
             }
             else{
                 document.getElementById("grupo-correo").classList.add("grupo-formulario-incorrecto");
                 document.getElementById("grupo-correo").classList.remove("grupo-formulario-correcto");
+                document.querySelector("#grupo-correo .formulario-input_error").classList.add("formulario-input_error-activo")
             }
         break
 
@@ -38,21 +40,25 @@ const validarFormulario = (e) =>{
             if(expresiones.telefono.test(e.target.value)){
                 document.getElementById("grupo-telefono").classList.remove("grupo-formulario-incorrecto");
                 document.getElementById("grupo-telefono").classList.add("grupo-formulario-correcto");
+                document.querySelector("#grupo-telefono .formulario-input_error").classList.remove("formulario-input_error-activo")
             }
             else{
                 document.getElementById("grupo-telefono").classList.add("grupo-formulario-incorrecto");
                 document.getElementById("grupo-telefono").classList.remove("grupo-formulario-correcto");
+                document.querySelector("#grupo-telefono .formulario-input_error").classList.add("formulario-input_error-activo")
             }
         break
 
         case "asunto":
-            if(expresiones.asunto.test(e.target.value)){
+            if(expresiones.nombre.test(e.target.value)){
                 document.getElementById("grupo-asunto").classList.remove("grupo-formulario-incorrecto");
                 document.getElementById("grupo-asunto").classList.add("grupo-formulario-correcto");
+                document.querySelector("#grupo-asunto .formulario-input_error").classList.remove("formulario-input_error-activo")
             }
             else{
                 document.getElementById("grupo-asunto").classList.add("grupo-formulario-incorrecto");
                 document.getElementById("grupo-asunto").classList.remove("grupo-formulario-correcto");
+                document.querySelector("#grupo-asunto .formulario-input_error").classList.add("formulario-input_error-activo")
             }
         break
     }
