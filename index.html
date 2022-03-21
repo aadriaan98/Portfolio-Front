@@ -180,24 +180,53 @@
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>¿Querés contactarme? <br> Completá el formulario</p>
-            <form>
-                <input type="text" id="nombre" class="input-base" placeholder="Nombre y Apellido" required >
-
-                <input type="email" id="correo" class="input-base" required placeholder="email@dominio.com">
-
-                <input type="text" id="asunto" class="input-base" placeholder="Asunto">
-
-                <textarea name="mensaje" id="mensaje" cols="70" rows="15" class="input-base" required></textarea>
-                
-                <button>Enviar Mensaje</button>
-            </form>
+            <p class="subtitulo">¿Querés contactarme? Completá el formulario</p>
             <img src="./assets/images/contacto.png" alt="contacto"> 
+            <form id="formulario" class="formulario">
+
+                <div class="grupo-formulario" id="grupo-nombre">
+                    <label class="formulario-label" for="nombre">Nombre y Apellido</label>
+                    <div class="grupo-formulario_input">
+                        <input type="text" id="nombre" class="formulario-input" name="nombre" required >
+                    </div>
+                    <p class="formulario-input_error">El nombre sólo puede contener letras y espacios.</p>
+                </div>
+
+                <div class="grupo-formulario" id="grupo-correo">    
+                    <label  class="formulario-label" for="correo">Mail</label>
+                    <div class="grupo-formulario_input">
+                        <input type="email" id="email" class="formulario-input" name="email" required >
+                    </div>
+                    <p class="formulario-input_error">Formato inválido. El formato debe ser: ejemplo@email.com</p>    
+                </div>
+
+                <div class="grupo-formulario" id="grupo-telefono">
+                    <label for="telefono" class="formulario-label">Teléfono</label>
+                    <div class="grupo-formulario_input">
+                        <input type="tel" name="telefono" id="telefono" class="formulario-input" required >
+                        <p class="formulario-input_error">Ingresá números solamente</p>
+                    </div>
+                </div>
+
+                <div class="grupo-formulario" id="grupo-asunto">
+                    <label  class="formulario-label" for="asunto">Asunto</label>
+                    <div class="grupo-formulario_input">
+                        <input type="text" id="asunto" class="formulario-input" name="asunto" minlength="10" maxlength="30">
+                    </div>
+                    <p class="formulario-input_error">El asunto debe tener de 10 a 30 caracteres</p>
+                </div>
+
+                <div class="grupo-button">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+
+            </form>
+          
         </section>
     </main>
     <footer>
         <p>Desarrollado por Adrián Barros <br> 2022 </p>
     </footer>
-    
+    <script src="./formulario.js"></script>
 </body>
 </html>
