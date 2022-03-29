@@ -1,0 +1,11 @@
+#proyectos{
+    width: 100%;
+    background: #E5E5E5;
+}
+#proyectos h2{
+    color: #464646;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+}

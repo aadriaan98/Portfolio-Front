@@ -1,0 +1,36 @@
+.skills-y-hobbies{
+    width: 100%;
+    height: 1500px;
+    background: #E5E5E5;
+}
+#skills{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+#skills h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #464646;
+    padding: 1rem;
+}
+#skills p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin-top: 0.5rem;
+}
+#skills div{
+    text-align: center;
+    width: 80%;
+    height: 118px;
+    background: #FFFFFF;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+#skills img{
+    margin-top: 1rem;
+}

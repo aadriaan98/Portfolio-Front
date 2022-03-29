@@ -1,0 +1,33 @@
+#hobbies{
+    width: 100%;
+    height: 750px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+#hobbies h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #464646;
+    padding: 1rem;
+}
+#hobbies p{
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    margin-top: 0.5rem;
+}
+#hobbies div{
+    text-align: center;
+    width: 80%;
+    height: 118px;
+    background: #FFFFFF;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+#hobbies img{
+    margin-top: 1rem;
+}
