@@ -32,3 +32,22 @@
 .encriptador button:hover{
     transform: scale(1.1);
 }
+@media screen and (min-width:480px) {
+    .encriptador img{
+        text-align: center;
+        width: 450px;
+        height: 170px;
+    }
+    .encriptador h3{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+    .encriptador p{
+        text-align: start;
+        margin-left: 2.5rem;
+    }
+    .encriptador div{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+}

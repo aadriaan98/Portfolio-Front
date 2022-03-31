@@ -17,3 +17,17 @@
     padding-right: 1rem;
     padding-bottom: 1rem;
 }
+@media screen and (min-width:480px) {
+    #sobre-mi{
+        height: 286px;
+    }
+    #sobre-mi h2{
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 0;
+    }
+    #sobre-mi p{
+        height: 112px;
+        padding: 0.5rem 2rem 2rem 2rem;
+    }
+}

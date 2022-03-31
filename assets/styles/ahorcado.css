@@ -31,3 +31,22 @@
 .ahorcado button:hover{
     transform: scale(1.1);
 }
+@media screen and (min-width:480px) {
+    .ahorcado img{
+        text-align: center;
+        width: 450px;
+        height: 170px;
+    }
+    .ahorcado h3{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+    .ahorcado p{
+        text-align: start;
+        margin-left: 2.5rem;
+    }
+    .ahorcado div{
+        text-align: start;
+        margin-left: 1.5rem;
+    }
+}

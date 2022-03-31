@@ -1,20 +1,26 @@
 .presentacion{
     width: 100%;
     background: #E5E5E5;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .presentacion img{
     width: 100px;
     height: 100px;
     border-radius: 4rem;
-    margin: 2rem auto auto 1rem;
+    margin: 1rem auto auto 1rem;
 }
-.presentacion h1{
+.titulos{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+.titulos h1{
     font-size: 22px;
     font-weight: 700;
     padding: 1rem;
     color: #464646;
 }
-.presentacion h3{
+.titulos h3{
     font-size: 16px;
     font-weight: 400;
     color: #464646;
@@ -25,6 +31,7 @@
     width: 100%;
     display: flex;
     background: #E5E5E5;
+    padding-left: 0.5rem;
 }
 .nav-presentacion img{
     width: 10px;
@@ -41,4 +48,21 @@
 .nav-presentacion a{
     color: #464646;
     text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+    .presentacion{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .presentacion img{
+        width: 315px;
+        height: 150px;
+        border-radius: 5rem;
+        margin-right: 2rem;
+    }
+    .nav-presentacion{
+        padding-left: .5rem;
+        margin-top: -1rem;
+    }
 }

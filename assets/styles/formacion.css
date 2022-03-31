@@ -3,6 +3,11 @@
     height: 700px;
     background: #EAF2FD;
 }
+#formacion div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #formacion h2{
     text-align: center;
     font-size: 22px;
@@ -10,23 +15,55 @@
     font-weight: 700;
     padding-top: 2rem;
 }
-#formacion div{
+div .bloque-formacion{
     width: 80%;
     height: 118px;
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: center;
     background: #ffffff;
     margin-top: 3rem;
     border-radius: 1rem;
 }
-#formacion img{
+.bloque-formacion img{
     width: 84px;
     height: 58px;
     margin-top: 2rem;
 }
-#formacion h3{
+.bloque-formacion h3{
    font-weight: 700;
    font-size: 16px;
    color: #464646;
    margin-top: 2rem;
+}
+@media screen and (min-width:480px) {
+    #formacion{
+        width: 100%;
+        height: 300px;
+    }
+    #formacion div{
+        margin-left: 1rem;
+        flex-direction: row;
+        width: 95%;
+        margin-top: 0.5rem;
+    }
+    .bloque-formacion{
+        justify-content: center;
+    }
+
+    div .bloque-formacion{
+        width: 224px;
+        background: #ffffff;
+        border-radius: 0;
+    }
+    .bloque-formacion img{
+        position: absolute;
+        margin:0;
+    }
+    .bloque-formacion h3{
+        margin-top: 11rem;
+    }
+    .bloque-formacion p{
+        margin-top: 16rem;
+        position: absolute;
+    }
 }
