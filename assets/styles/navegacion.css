@@ -19,10 +19,15 @@ header{
     width: 10px;
     height: 10px;
 }
-.menu a:not(.correo-electronico){
+.bloque-nav .item-nav{
     display: none;
     justify-content: flex-end;
     text-decoration: none;
+}
+.correo-electronico a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #464646;
 }
 .bloque-menu p{
     font-size: 16px;
@@ -57,4 +62,50 @@ header{
         width: 16px;
         height: 16px;
     }
+    .correo-electronico a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #464646;
+    }
+}
+@media screen and (min-width:1024px) {
+    header{
+        width: 100%;
+        height: 520px;
+    }
+    .bloque-menu img{
+        margin-left: 4.5rem;
+    }
+    .bloque-nav{
+        display: flex;
+    }
+    .bloque-nav .item-nav{
+        display: inline-flex;
+        margin-right: .5rem;
+    }
+    .correo-electronico a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #464646;
+    }
+    .bloque-nav .correo-electronico a:hover{
+        padding: 0.5rem;
+        transition: 0.5s all;
+        color: royalblue;
+    }
+    ul{
+        margin-right: 5rem;
+    }
+    .item-nav a{
+        text-decoration: none;
+        color: #464646;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .item-nav a:hover{
+        transform: scale(1.1);
+        transition: 0.5s all;
+        color: royalblue;
+    }
+    
 }

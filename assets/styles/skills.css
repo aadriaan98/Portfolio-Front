@@ -64,3 +64,23 @@
         margin-left: -1rem;
     }
 }
+@media screen and (min-width:912px) {
+    #skills{
+       height: 580px;
+    }
+    .bloque-skills_titulo{
+        font-size: 32px;
+    }
+    .bloque-skills{
+        width: 80%;
+        justify-content: center; 
+    }
+    .bloque-skills div{
+        width: 176px;
+        height: 174px;
+        margin: 2rem;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -20,6 +20,8 @@
 @media screen and (min-width:480px) {
     #sobre-mi{
         height: 286px;
+        width: 100%;
+        background: #EAF2FD;
     }
     #sobre-mi h2{
         padding-top: 2rem;
@@ -29,5 +31,22 @@
     #sobre-mi p{
         height: 112px;
         padding: 0.5rem 2rem 2rem 2rem;
+    }
+}
+@media screen and (min-width:912px) {
+    #sobre-mi{
+        height: 386px;
+        width: 100%;
+        background: #EAF2FD;
+    }
+    #sobre-mi h2{
+        font-size: 32px;
+        margin-left: 4rem;
+        padding-top: 4rem;
+    }
+    #sobre-mi p{
+        font-size: 16px;
+        margin-left: 4rem;
+        padding-top: 2rem;
     }
 }

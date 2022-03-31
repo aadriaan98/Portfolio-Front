@@ -50,3 +50,28 @@
         margin-left: 1.5rem;
     }
 }
+@media screen and (min-width:1024px) {
+    .ahorcado{
+        height: 581px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .ahorcado img{
+        width: 752px;
+        height: 406px;
+    }
+    .ahorcado h3{
+        font-size: 22px;
+        margin-top: 11rem;
+    }
+    .ahorcado p{
+        font-size: 16px;
+        margin-top: 15rem;
+        margin-right: -10.5rem;
+    }
+    .ahorcado div{
+        margin-right: -17.5rem;
+        margin-top: 18rem;
+    }
+}

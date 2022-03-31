@@ -9,3 +9,9 @@
     text-align: center;
     padding: 1rem;
 }
+@media screen and (min-width:1024px) {
+    #proyectos h2{
+        font-size: 32px;
+        padding: 3rem;
+    }
+}

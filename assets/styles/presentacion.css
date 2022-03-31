@@ -66,3 +66,36 @@
         margin-top: -1rem;
     }
 }
+@media screen and (min-width:912px) {
+    .titulos h1{
+        font-size: 52px;
+        padding-top: 4rem;
+        padding-left: 5rem;
+    }
+    .titulos h3{
+        font-size: 22px;
+        padding-top: 2rem;
+        padding-left: 5rem;
+    }
+    .presentacion img{
+        width: 315px;
+        height: 220px;
+        border-radius: 10rem;
+        margin-right: 6rem;
+        margin-top: 4rem;
+    }
+    .nav-presentacion{
+        font-size: 16px;
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    .nav-presentacion a:hover{
+        padding: 1rem;
+        transition: 0.5s all;
+        color: royalblue;
+    }
+    .nav-presentacion img{
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -32,17 +32,17 @@
                     <img src="./assets/images/estrellita.png" width="16px" height="16px" alt="estrella">
                     <p>Adrián Barros</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#sobre-mi">Sobre mi</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#hobbies">Hobbies</a></li>
-                        <li><a href="#formacion">Formación</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="mailto:adrianricardo123barros@gmail.com" class="correo-electronico">adrianricardo123barros@gmail.com</a></li>
-                    </ul>
-                </nav>
+                <div class="bloque-nav">
+                        <ul>
+                            <li class="item-nav"><a href="#sobre-mi">Sobre mi</a></li>
+                            <li class="item-nav"><a href="#skills">Skills</a></li>
+                            <li class="item-nav"><a href="#hobbies">Hobbies</a></li>
+                            <li class="item-nav"><a href="#formacion">Formación</a></li>
+                            <li class="item-nav"><a href="#proyectos">Proyectos</a></li>
+                            <li class="item-nav"><a href="#contacto">Contacto</a></li>
+                            <li class="correo-electronico"><a href="mailto:adrianricardo123barros@gmail.com">adrianricardo123barros@gmail.com</a></li>
+                        </ul>
+                </div>
             </div>
         </section>
         <section>
@@ -84,6 +84,7 @@
                 asimismo estoy dispuesto a sacrificarlo para dedicarme al desarrollo, que es lo que me apasiona.
             </p>
         </section>
+
         <section class="skills-y-hobbies">
             <div id="skills">
                 <div class="bloque-skills_titulo">
@@ -193,6 +194,7 @@
                 </div>
             </div>
         </section>
+
         <section id="proyectos">
             <h2>Experiencia profesional</h2>
             <div class="encriptador">
@@ -212,49 +214,57 @@
                 </div>
             </div>
         </section>
+
         <section id="contacto">
-            <h2>Contacto</h2>
-            <p class="subtitulo">¿Querés contactarme? Completá el formulario</p>
-            <img src="./assets/images/contacto.png" alt="contacto"> 
-            <form id="formulario" class="formulario">
+            <div class="bloque-contacto_imagen">
+                <img src="./assets/images/contacto.png" alt="contacto">
+            </div>
+            <div class="bloque-contacto">
+                <h2>Contacto</h2>
 
-                <div class="grupo-formulario" id="grupo-nombre">
-                    <label class="formulario-label" for="nombre">Nombre y Apellido</label>
-                    <div class="grupo-formulario_input">
-                        <input type="text" id="nombre" class="formulario-input" name="nombre">
+                <p class="subtitulo">¿Querés contactarme? Completá el formulario</p>
+                
+                <form id="formulario" class="formulario">
+
+                    <div class="grupo-formulario" id="grupo-nombre">
+                        <label class="formulario-label" for="nombre">Nombre y Apellido</label>
+                        <div class="grupo-formulario_input">
+                            <input type="text" id="nombre" class="formulario-input" name="nombre">
+                        </div>
+                        <p class="formulario-input_error">El nombre sólo puede contener letras y espacios.</p>
                     </div>
-                    <p class="formulario-input_error">El nombre sólo puede contener letras y espacios.</p>
-                </div>
 
-                <div class="grupo-formulario" id="grupo-correo">    
-                    <label  class="formulario-label" for="correo">Mail</label>
-                    <div class="grupo-formulario_input">
-                        <input type="email" id="email" class="formulario-input" name="email">
+                    <div class="grupo-formulario" id="grupo-correo">    
+                        <label  class="formulario-label" for="correo">Mail</label>
+                        <div class="grupo-formulario_input">
+                            <input type="email" id="email" class="formulario-input" name="email">
+                        </div>
+                        <p class="formulario-input_error">Formato inválido. El formato debe ser: ejemplo@email.com</p>    
                     </div>
-                    <p class="formulario-input_error">Formato inválido. El formato debe ser: ejemplo@email.com</p>    
-                </div>
 
-                <div class="grupo-formulario" id="grupo-telefono">
-                    <label for="telefono" class="formulario-label">Teléfono</label>
-                    <div class="grupo-formulario_input">
-                        <input type="tel" name="telefono" id="telefono" class="formulario-input">
-                        <p class="formulario-input_error">Ingresá números solamente.</p>
+                    <div class="grupo-formulario" id="grupo-telefono">
+                        <label for="telefono" class="formulario-label">Teléfono</label>
+                        <div class="grupo-formulario_input">
+                            <input type="tel" name="telefono" id="telefono" class="formulario-input">
+                            <p class="formulario-input_error">Ingresá números solamente.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="grupo-formulario" id="grupo-asunto">
-                    <label  class="formulario-label" for="asunto">Asunto</label>
-                    <div class="grupo-formulario_input">
-                        <input type="text" id="asunto" class="formulario-input" name="asunto" minlength="10" maxlength="30">
+                    <div class="grupo-formulario" id="grupo-asunto">
+                        <label  class="formulario-label" for="asunto">Asunto</label>
+                        <div class="grupo-formulario_input">
+                            <input type="text" id="asunto" class="formulario-input" name="asunto" minlength="10" maxlength="30">
+                        </div>
+                        <p class="formulario-input_error">El asunto debe tener de 10 a 30 caracteres y no puede tener números.</p>
                     </div>
-                    <p class="formulario-input_error">El asunto debe tener de 10 a 30 caracteres y no puede tener números.</p>
-                </div>
 
-                <div class="grupo-button">
-                    <button type="submit">Enviar Mensaje</button>
-                </div>
+                    <div class="grupo-button">
+                        <button type="submit">Enviar Mensaje</button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
+            
           
         </section>
     </main>

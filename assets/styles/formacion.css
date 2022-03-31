@@ -67,3 +67,26 @@ div .bloque-formacion{
         position: absolute;
     }
 }
+@media screen and (min-width:912px) {
+    #formacion{
+        height: 581px;
+    }
+    #formacion h2{
+        font-size: 32px;
+    }
+    div .bloque-formacion{
+        width: 368px;
+        height: 286px;
+    }
+    .bloque-formacion img{
+        width: 192px;
+        height: 130px;
+    }
+    .bloque-formacion h3{
+        margin-top: 21rem;
+    }
+    .bloque-formacion p{
+        margin-top: 26rem;
+        position: absolute;
+    }
+}
