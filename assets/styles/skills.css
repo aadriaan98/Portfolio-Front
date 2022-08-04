@@ -1,86 +1,117 @@
-.skills-y-hobbies{
-    width: 100%;
-    background: #E5E5E5;
-}
 #skills{
     width: 100%;
-    height: 850px;
-    display: flex;
-    flex-direction: column;
 }
-.bloque-skills_titulo{
-    text-align: center;
+#bloque-titulo{
+    width: 100%;
+}
+
+.bloque-skills_titulo h2{
     font-size: 22px;
     font-weight: 700;
     color: #464646;
     padding: 1rem;
+    text-align: left;
 }
-#skills div{
+.bloque-skills{
+    margin-bottom: 2rem;
+}
+.bloque-skills ul{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.bloque-skills p{
+li .bloque-skills_item{
+    margin: 1rem;
+    height: 150px;
+    width: 150px;
+}
+.bloque-skills_item{
+    background-color: white; 
+}
+.bloque-skills_item img{
+    width: 40px;
+    height: 50px;
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
+}
+.bloque-skills_item p{
     font-weight: 700;
     font-size: 16px;
     color: #464646;
     margin-top: 0.5rem;
-}
-.bloque-skills div{ 
     text-align: center;
-    width: 80%;
-    height: 118px;
-    background: #FFFFFF;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
 }
-.bloque-skills img{
-    margin-top: 2rem;
+@media screen and (min-width:400px){
+    li .bloque-skills_item{
+        height: 160px;
+        width: 160px;
+    }
 }
 @media screen and (min-width:480px){
-    #skills{
-        align-items: center;
-        width: 100%;
-        height: 370px;
-    }
-    #skills div{
-        display: flex;
-        flex-direction: row; 
-    }
-    .bloque-skills{
-        width: 80%;
-    }
-    .bloque-skills div{
+
+    li .bloque-skills_item{
+        height: 160px;
+        width: 175px;
+        margin: 2rem
+    }  
+}
+@media screen and (min-width:768px) {
+    li .bloque-skills_item{
         width: 224px;
-        border-radius: 0;
+        margin: 1rem;
     }
-    .bloque-skills img{
-        margin-bottom: 1rem;
-        padding-left: 1rem;
-    }
-    .bloque-skills p{
-        margin-top: 5rem;
-        margin-left: -1rem;
+    .bloque-skills_item img{
+        margin-left: 5.5rem;
     }
 }
 @media screen and (min-width:912px) {
-    #skills{
-       height: 580px;
-    }
-    .bloque-skills_titulo{
+    .bloque-skills_titulo h2{
         font-size: 32px;
+        margin-left: 2rem;
+    }
+    .bloque-skills ul{
+        margin-left: 2rem;
+    }
+    .bloque-skills_item p{
+        font-size: 24px;
+    }
+    .bloque-skills_item img{
+        margin-left: 0rem;
     }
     .bloque-skills{
-        width: 80%;
+        width: 90%;
         justify-content: center; 
     }
     .bloque-skills div{
-        width: 176px;
-        height: 174px;
-        margin: 2rem;
-        padding: 1rem;
         align-items: center;
         text-align: center;
+    }
+}
+@media screen and (min-width:1024px) {
+    li .bloque-skills_item{
+        width: 130px;
+        height: 130px;
+        margin: 1rem;
+    }
+    .bloque-skills{
+        width: 98%;
+        justify-content: center; 
+    }
+
+}
+@media screen and (min-width:1200px) {
+    li .bloque-skills_item{
+        width: 150px;
+    }
+}
+@media screen and (min-width:1300px) {
+    li .bloque-skills_item{
+        width: 170px;
+        height: 160px;
+    }
+}
+@media screen and (min-width:1500px) {
+    li .bloque-skills_item{
+        width: 190px;
     }
 }

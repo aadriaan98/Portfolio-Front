@@ -1,6 +1,7 @@
 #formacion{
     width: 100%;
-    height: 700px;
+    height: 750px;
+    padding-bottom: 2rem;
     background: #EAF2FD;
 }
 #formacion div{
@@ -16,13 +17,11 @@
     padding-top: 2rem;
 }
 div .bloque-formacion{
-    width: 80%;
+    width: 200px;
     height: 118px;
-    margin-left: 1rem;
     text-align: center;
     background: #ffffff;
-    margin-top: 3rem;
-    border-radius: 1rem;
+    margin: 3rem;
 }
 .bloque-formacion img{
     width: 84px;
@@ -51,19 +50,18 @@ div .bloque-formacion{
     }
 
     div .bloque-formacion{
-        width: 224px;
+        width: 250px;
         background: #ffffff;
-        border-radius: 0;
     }
     .bloque-formacion img{
         position: absolute;
         margin:0;
     }
     .bloque-formacion h3{
-        margin-top: 11rem;
+        margin-top: 12rem;
     }
     .bloque-formacion p{
-        margin-top: 16rem;
+        margin-top: 18rem;
         position: absolute;
     }
 }
